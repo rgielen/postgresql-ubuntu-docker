@@ -19,5 +19,7 @@ RUN /etc/init.d/postgresql start
 RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.6/main/pg_hba.conf
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.6/main/postgresql.conf
 
+VOLUME ["/var/lib/postgresql/"]
+
 EXPOSE 5432
 ENTRYPOINT ["/usr/lib/postgresql/9.6/bin/postgres", "-D", "/var/lib/postgresql/9.6/main", "-c", "config_file=/etc/postgresql/9.6/main/postgresql.conf"]
