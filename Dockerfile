@@ -16,11 +16,10 @@ RUN apt-get update && apt-get upgrade -y \
            locales \
       && locale-gen $LANG && update-locale LANG=$LANG \
       && apt-get install -y --no-install-recommends \
-           sudo \
-           postgresql \
-           postgresql-client \
-           postgresql-contrib \
-           postgresql-doc \
+           postgresql-$PG_VERSION \
+           postgresql-client-$PG_VERSION \
+           postgresql-contrib-$PG_VERSION \
+           postgresql-doc-$PG_VERSION \
            python \
            python3 \
            pwgen \
