@@ -21,6 +21,7 @@ RUN apt-get update && apt-get upgrade -y \
            postgresql-contrib-$PG_VERSION \
            postgresql-doc-$PG_VERSION \
            postgresql-$PG_VERSION-plv8 \
+           postgresql-plpython-$PG_VERSION \
            python \
            python3 \
            pwgen \
