@@ -5,6 +5,12 @@
 
 This is an Ubuntu-based PostgreSQL Docker Image using stock packages from Ubuntu.
 
+## Run a container
+
+Run ```docker pull rgielen/postgresql-ubuntu``` to pull the latest image before running.
+
+Use ```docker run -d -v my-pg-volume:/var/lib/postgresql --name my-pg rgielen/postgresql-ubuntu``` to create and run a container named my-pg with a volume named ```my-pg-volume```, where the database cluster will be stored persistently.
+
 ## Supported Volumes
 
 * ```/var/lib/postgresql``` will contain the database cluster
