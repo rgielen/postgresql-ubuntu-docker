@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
 MAINTAINER "Rene Gielen" <rgielen@apache.org>
 
 ENV LANG de_DE.UTF-8
